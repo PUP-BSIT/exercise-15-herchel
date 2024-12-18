@@ -19,13 +19,21 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1: 
-            # TODO(Durante): call the menu in your module
+            from herchel import durante
+
+            durante.FitnessTracker().display_menu()
         case 2:
-            # TODO(Florido): call the menu in your module
+            from herchel.florido import Christmas
+            christmas = Christmas()
+            christmas.display_menu()
         case 3:
-            # TODO(Riomalos): call the menu in your module
+            from herchel.riomalos import KDramaList
+            kdramalist = KDramaList()
+            kdramalist.display_menu()
         case 4:
-            # TODO(Siervo): call the menu in your module
+            from herchel.siervo import GradeManagementSystem
+            grades = GradeManagementSystem()
+            grades.display_menu()
         case 5:
             pass
         case _:
