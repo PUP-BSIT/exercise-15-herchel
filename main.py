@@ -21,7 +21,9 @@ def process_choice(choice):
         case 1: 
             # TODO(Durante): call the menu in your module
         case 2:
-            # TODO(Florido): call the menu in your module
+            from herchel import florido
+            
+            florido.Christmas.display_menu()
         case 3:
             # TODO(Riomalos): call the menu in your module
         case 4:
