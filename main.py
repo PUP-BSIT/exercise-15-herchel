@@ -31,7 +31,9 @@ def process_choice(choice):
             kdramalist = KDramaList()
             kdramalist.display_menu()
         case 4:
-            # TODO(Siervo): call the menu in your module
+            from herchel.siervo import GradeManagementSystem
+            grades = GradeManagementSystem()
+            grades.display_menu()
         case 5:
             pass
         case _:
