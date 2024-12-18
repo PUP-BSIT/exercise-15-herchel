@@ -87,5 +87,3 @@ class FitnessTracker:
                      return
                 case _:
                     print("Invalid choice. Please try again.")
-
-FitnessTracker().display_menu()
