@@ -73,5 +73,3 @@ class KDramaList:
                     return
                 case _:
                     print("Invalid choice. Please try again.")
-
-KDramaList().display_menu()
