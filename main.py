@@ -21,7 +21,7 @@ def process_choice(choice):
         case 1: 
             from herchel import durante
 
-            durante.FitnessTracker().display_menu()
+            durante.FitnessTracker.display_menu()
         case 2:
             from herchel import florido
             
