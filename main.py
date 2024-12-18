@@ -27,9 +27,9 @@ def process_choice(choice):
             christmas = Christmas()
             christmas.display_menu()
         case 3:
-            from herchel import riomalos
-
-            riomalos.KDramaList.display_menu()
+            from herchel.riomalos import KDramaList
+            kdramalist = KDramaList()
+            kdramalist.display_menu()
         case 4:
             from herchel import siervo
 
