@@ -19,7 +19,9 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1: 
-            # TODO(Durante): call the menu in your module
+            from herchel import durante
+
+            durante.FitnessTracker().display_menu()
         case 2:
             from herchel import florido
             
