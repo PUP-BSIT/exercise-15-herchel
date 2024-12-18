@@ -19,9 +19,9 @@ def display_get_choice():
 def process_choice(choice):
     match choice:
         case 1: 
-            from herchel import durante
-
-            durante.FitnessTracker().display_menu()
+            from herchel.durante import FitnessTracker
+            fitnesstracker = FitnessTracker()
+            fitnesstracker.display_menu()
         case 2:
             from herchel.florido import Christmas
             christmas = Christmas()
