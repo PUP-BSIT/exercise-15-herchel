@@ -29,7 +29,9 @@ def process_choice(choice):
 
             riomalos.KDramaList.display_menu()
         case 4:
-            # TODO(Siervo): call the menu in your module
+            from herchel import siervo
+
+            siervo.GradeManagementSystem.display_menu()
         case 5:
             pass
         case _:
