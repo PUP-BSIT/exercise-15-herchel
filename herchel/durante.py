@@ -1,11 +1,11 @@
-class FitnessTracker:
+class FitnessTracker:   
     def __init__(self):
         self.activities = []
         self.completed_activities = []
-        self.max_activities = 100
+        self.MAX_ACTIVITIES = 100
 
     def log_activity(self, activity_name, minutes):
-        if len(self.activities) >= self.max_activities:
+        if len(self.activities) >= self.MAX_ACTIVITIES:
             return "Activity list is full. Cannot add more activities."
 
         for activity in self.activities:
@@ -22,30 +22,34 @@ class FitnessTracker:
             if activity["name"] == activity_name:
                 self.activities.remove(activity)
                 return f'Activity "{activity_name}" removed from the list.'
+            
         return f'Activity "{activity_name}" not found in the list.'
 
     def list_activities(self):
         if not self.activities:
             return "No activities logged yet."
 
-        activities_list = "Activities Logged:"
+        activities_list = "Activities Logged:\n"
         for activity in self.activities:
             activities_list += (f'- {activity["name"]}: '
-                                f'{activity["minutes"]} minutes')
+                                f'{activity["minutes"]} minutes\n')
+            
         return activities_list
     
     def list_completed_activities(self):
         if not self.completed_activities:
             return "No activities completed yet."
 
-        completed_list = "Completed Activities:"
+        completed_list = "Completed Activities:\n"
+
         for activity in self.completed_activities:
-            completed_list += f'- {activity}'
+            completed_list += f'- {activity}\n'
         return completed_list
 
     def mark_completed(self, activity_name):
         for activity in self.activities:
             if activity["name"] == activity_name:
+
                 self.activities.remove(activity)
                 self.completed_activities.append(activity_name)
                 return f'Activity "{activity_name}" marked as completed.'
