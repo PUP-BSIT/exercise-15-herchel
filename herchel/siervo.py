@@ -119,4 +119,3 @@ class GradeManagementSystem:
                     return
                 case _:
                     print("Invalid choice. Please try again.")
-
