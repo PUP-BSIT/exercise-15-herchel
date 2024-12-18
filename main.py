@@ -23,9 +23,9 @@ def process_choice(choice):
 
             durante.FitnessTracker.display_menu()
         case 2:
-            from herchel import florido
-            
-            florido.Christmas.display_menu()
+            from herchel.florido import Christmas
+            christmas = Christmas()
+            christmas.display_menu()
         case 3:
             from herchel import riomalos
 
