@@ -5,7 +5,7 @@ class KDramaList:
         self.MAX_KDRAMAS = 100
 
     def add_kdrama(self, title):
-        if len(self.kdramas) < self.max_kdramas:
+        if len(self.kdramas) < self.MAX_KDRAMAS:
             if title in self.kdramas:
                 return f'\nK-drama "{title}" is already in the list.'
             else: 
