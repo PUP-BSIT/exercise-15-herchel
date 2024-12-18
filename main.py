@@ -1,8 +1,12 @@
-UNSET_OPTION = 0
-EXIT_OPTION = 5
-choice = UNSET_OPTION
+def menu():
+    UNSET_OPTION = 0
+    EXIT_OPTION = 5
+    choice = UNSET_OPTION
+    while choice != EXIT_OPTION:
+        choice = display_get_choice()
+        process_choice(choice)
 
-while choice != EXIT_OPTION:
+def display_get_choice():
     print("\n=== Main Menu ===")
     print("1. Durante")
     print("2. Florido")
@@ -10,8 +14,9 @@ while choice != EXIT_OPTION:
     print("4. Siervo")
     print("5. Exit")
 
-    choice = int(input("Enter your choice: "))
+    return int(input("Enter your choice: "))
 
+def process_choice(choice):
     match choice:
         case 1: 
             # TODO(Durante): call the menu in your module
@@ -26,3 +31,5 @@ while choice != EXIT_OPTION:
         case _:
             print("\nError: Invalid input. "
                   + "Please enter a number between 1 and 5.")
+            
+menu()
