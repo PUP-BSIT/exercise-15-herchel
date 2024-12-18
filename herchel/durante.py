@@ -49,7 +49,6 @@ class FitnessTracker:
     def mark_completed(self, activity_name):
         for activity in self.activities:
             if activity["name"] == activity_name:
-
                 self.activities.remove(activity)
                 self.completed_activities.append(activity_name)
                 return f'Activity "{activity_name}" marked as completed.'
