@@ -51,6 +51,7 @@ class FitnessTracker:
             if activity["name"] == activity_name:
                 self.activities.remove(activity)
                 self.completed_activities.append(activity_name)
+                
                 return f'Activity "{activity_name}" marked as completed.'
         return f'Activity "{activity_name}" not found in the list.'
 
