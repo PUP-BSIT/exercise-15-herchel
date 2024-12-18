@@ -8,6 +8,7 @@ class GradeManagementSystem:
         name = input("Enter the student's name: ").strip().lower()
         if name not in self.students:
             self.students[name] = {}
+
         subject = input("Enter the subject: ").strip().lower()              
         if subject not in self.subjects:
             self.subjects.append(subject)
@@ -27,9 +28,10 @@ class GradeManagementSystem:
         if name not in self.students:
             print("Student not found.")
             return
-        print(f"Grades for {name}:")
-        grades = self.students[name]
         
+        print(f"Grades for {name}:")
+
+        grades = self.students[name]
         if not grades:
             print("No grades recorded.")
         else:
@@ -41,6 +43,7 @@ class GradeManagementSystem:
         if name not in self.students:
             print("Student not found.")
             return
+        
         subject = input("Enter subject to update: ").strip().lower()
         if subject not in self.students[name]:
             print("No grade recorded for this subject.")
@@ -61,6 +64,7 @@ class GradeManagementSystem:
         if name not in self.students:
             print("Student not found.")
             return
+        
         grades = [grade for grade in self.students[name].values() 
                   if grade is not None]
         
@@ -75,6 +79,7 @@ class GradeManagementSystem:
         if name not in self.students:
             print("Student not found.")
             return
+        
         subject = input("Enter the subject to delete grades for: "
                         ).strip().lower()
         
