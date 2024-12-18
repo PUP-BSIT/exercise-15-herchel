@@ -2,7 +2,7 @@ class GradeManagementSystem:
     def __init__(self):
         self.students = {}  
         self.subjects = [] 
-        self.max_grade = 100 
+        self.MAX_GRADE = 100 
 
     def add_grade(self):
         name = input("Enter the student's name: ").strip().lower()
