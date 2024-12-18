@@ -24,7 +24,7 @@ class Christmas:
             print(" " * (rows - 2) + Fore.YELLOW + "|_|")
 
     def count_days_left_before_christmas(self):
-        import datetime
+        import datetime 
 
         date_today = datetime.date.today()
         year_today = date_today.year
