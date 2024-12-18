@@ -15,11 +15,11 @@ class GradeManagementSystem:
         
         try:
             grade = float(input(f"Enter the grade for {subject}: "))
-            if 0 <= grade <= self.max_grade:
+            if 0 <= grade <= self.MAX_GRADE:
                 self.students[name][subject] = grade
                 print(f"Grade {grade} added for {name} in {subject}.")
             else:
-                print(f"Invalid. Must be between 0 and {self.max_grade}.")
+                print(f"Invalid. Must be between 0 and {self.MAX_GRADE}.")
         except ValueError:
             print("Invalid input. Grade must be a number.")
 
@@ -51,11 +51,11 @@ class GradeManagementSystem:
         
         try:
             grade = float(input(f"Enter the new grade for {subject}: "))
-            if 0 <= grade <= self.max_grade:
+            if 0 <= grade <= self.MAX_GRADE:
                 self.students[name][subject] = grade
                 print(f"Grade updated to {grade} for {name} in {subject}.")
             else:
-                print(f"Invalid. Must be between 0 and {self.max_grade}.")
+                print(f"Invalid. Must be between 0 and {self.MAX_GRADE}.")
         except ValueError:
             print("Invalid input. Grade must be a number.")
 
