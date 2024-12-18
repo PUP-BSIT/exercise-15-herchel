@@ -2,7 +2,7 @@ class KDramaList:
     def __init__(self):
         self.kdramas = []
         self.watched_kdramas = []
-        self.max_kdramas = 100
+        self.MAX_KDRAMAS = 100
 
     def add_kdrama(self, title):
         if len(self.kdramas) < self.max_kdramas:
