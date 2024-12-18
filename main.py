@@ -25,7 +25,9 @@ def process_choice(choice):
             
             florido.Christmas.display_menu()
         case 3:
-            # TODO(Riomalos): call the menu in your module
+            from herchel import riomalos
+
+            riomalos.KDramaList.display_menu()
         case 4:
             # TODO(Siervo): call the menu in your module
         case 5:
